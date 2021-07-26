@@ -1,38 +1,91 @@
+body{
+  margin: 0;
+  padding: 0
+}
+
+
 .App {
   text-align: center;
+  display: flex;
+  flex-direction:column;
+  width: 100vw;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header>.input-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+.header input{
+  
+  width: 200px;
+  height: 40px;
+  border: none;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  padding-right: 10px;
+  margin: 5px;
+  border: 1px solid gray;
+  font-size:17px;
+
+}
+.header button{
+  height: 97px;
+  width: 70px;
+  border-bottom-right-radius: 5px;
+   border-top-right-radius: 5px;
+   padding-left: 10px;
+  cursor: pointer;
+}
+.header {
+  flex: 30%;
+  background-color: tomato;
+  width: 100%;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
-
-.App-link {
-  color: #61dafb;
+.to-do-list{
+  flex: 70% ;
+  width: 100%;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
 }
+.task{
+  width: 500px;
+  height: 50px;
+  display: flex;
+  margin: 15px;
+ 
+}
+.content{
+  flex: 80%;
+  height: 100%;
+  display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.content span{
+  display: grid;
+  place-items:center;
+  border: 1px solid white;
+  width: 100%;
+  color: antiquewhite;
+  height: 100%;
+  font-size:18px;
+  border-right: none;
+  background-color: lightsalmon;
+}
+.task button{
+  flex: 20%;
+  height: 100%;
+  border: none;
+  background-color:red;
+   border-bottom-right-radius: 5px;
+   border-top-right-radius: 5px;
+   color: white;
+   cursor:pointer;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
 }
